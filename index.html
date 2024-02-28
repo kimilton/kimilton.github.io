@@ -8,10 +8,12 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    const setId = 123123123
-    const randId = Math.floor(Math.random() * 9999999)
+    const setId = 12
+    const randId = Math.floor(Math.random() * 9)
 
     const useId = Math.random() > 0.5 ? randId : setId
+
+    console.log(useId)
 
     gtag('config', 'G-2TESTY7RLE', {'user_id': useId});
   </script>
