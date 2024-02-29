@@ -7,11 +7,11 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
-    const setId = 123123123
+    const urlParams = new URLSearchParams(window.location.search);
+    const setToId = urlParams.get('setto') || 123123123
     const randId = (Math.floor(Math.random() * 11) + 1)
 
-    const useId = Math.random() > 0.5 ? randId : setId
+    const useId = Math.random() > 0.5 ? randId : setToId
 
     console.log(useId)
 
